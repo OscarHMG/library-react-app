@@ -3,15 +3,13 @@ import HomePage from './components/pages/HomePage';
 import './resources/css/App.css'
 import LoginPage from './components/pages/LoginPage';
 
+import {Route} from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <LoginPage/>
-      </div>
-    );
-  }
-}
+const App = () =>
+  <div>
+    <Route path="/" exact component={HomePage}/>
+    <Route path="/loginPage" exact component={LoginPage}/>>
+  </div>
+
 
 export default App;

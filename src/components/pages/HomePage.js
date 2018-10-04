@@ -6,6 +6,8 @@ import groupBooks from '../../resources/images/groupBooks.png';
 import student from '../../resources/images/student.png';
 import bookSelf from '../../resources/images/bookshelf.png';
 
+import {Link} from 'react-router-dom';
+
 export default class HomePage extends Component {
   render() {
     return (
@@ -21,7 +23,9 @@ export default class HomePage extends Component {
 							malesuada lacus. Eleifend enim potenti urna nascetur aliquet aptent hendrerit magna</p>
 						<div className="text-center mt-5 mb-5">
 							<button type="button" className="btn btn-outline-secondary btn-lg" >JOIN FOR FREE</button>
+							<strong><span style={{marginLeft: 10}}>Do you have an account? <Link to="/loginPage"> Login In</Link></span></strong>
 						</div>
+
 					
 					</div>
 				</div>
